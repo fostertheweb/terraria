@@ -1,0 +1,10 @@
+# Example Server Config
+language=en/US
+maxplayers=8
+motd=Ah, an aristocrat!
+port=7777
+steam=1
+secure=1
+world=/usr/terraria/worlds/World.wld
+worldpath=/usr/terraria/worlds
+lobby=friends
