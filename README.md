@@ -1,4 +1,4 @@
-# 🌲 Terraria Dedicated Server
+# 🌳 Terraria Dedicated Server
 
 Upload Terraria server config and world file to an S3 Bucket:
 
