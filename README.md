@@ -13,8 +13,8 @@ Run container using existing S3 bucket:
 ```bash
 docker run -it --name terraria \
   -p 7777:7777 \
-  -v worldsbucket:/etc/terraria:rw \
-  -v worldsbucket:/usr/terraria/worlds:rw \
-  -v worldsbucket:/var/log/terraria:rw \
+  -v bucketname:/etc/terraria:rw \
+  -v bucketname:/usr/terraria/worlds:rw \
+  -v bucketname:/var/log/terraria:rw \
   fostertheweb/terraria
 ```
