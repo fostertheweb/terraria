@@ -1,5 +1,16 @@
 # 🌲 Terraria Dedicated Server
 
+Upload Terraria server config and world file to an S3 Bucket:
+
+> Note the `data/` directory
+
+```
+data/
+├─ serverconfig.txt
+├─ World.wld
+└─ World.wld.bak
+```
+
 Install Docker REX-Ray S3FS plugin:
 
 ```bash
