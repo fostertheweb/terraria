@@ -16,10 +16,6 @@ FROM ubuntu:18.04 as setup
 # install s3fs
 RUN apt-get update && apt-get install -y s3fs
 
-RUN mkdir -p /etc/terraria
-RUN mkdir -p /usr/terraria/worlds
-RUN mkdir -p /var/log/terraria
-
 # copy server files
 WORKDIR /opt/terraria
 COPY --from=dist /opt/terraria .
