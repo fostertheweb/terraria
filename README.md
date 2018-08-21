@@ -1,4 +1,4 @@
-# Terraria Dedicated Server
+# 🌲 Terraria Dedicated Server
 
 Install Docker REX-Ray S3FS plugin:
 
