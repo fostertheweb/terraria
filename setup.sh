@@ -4,7 +4,7 @@ URL="https://terraria.org"
 PAGE="/tmp/terraria-org"
 ZIP="/tmp/terraria-server.zip"
 FILES="/tmp/terraria-server"
-APP="/opt/terraria"
+APP_PATH="/opt/terraria"
 
 # download terraria homepage
 curl $URL -o $PAGE
@@ -14,10 +14,10 @@ LINK=$(grep "Dedicated Server" $PAGE | cut -d"'" -f2)
 VERSION=$(echo $LINK | grep -Po '(?<=-)\d{1,}(?=.zip)')
 
 # download server assets
-curl "$URL$LINK" -o $ZIP
+curl $URL$LINK -o $ZIP
 
 # unzip the files
-unzip $ZIP -d $FILES
+unzip $ZIP $VERSION/Linux/* -d $FILES
 
 # copy linux files
-cp -r "$FILES/$VERSION/Linux" $APP
+cp -r $FILES/$VERSION/Linux $APP_PATH
