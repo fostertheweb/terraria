@@ -11,7 +11,7 @@ data/
 └─ World.wld.bak
 ```
 
-Install Docker REX-Ray S3FS plugin:
+Install Docker REX-Ray S3FS plugin on Docker host:
 
 ```bash
 docker plugin install rexray/s3fs \
